@@ -12,7 +12,7 @@ const components = {
 
 function Routes() {
     return (
-        <main className="container mx-auto p-6">
+        <main className="w-full">
             <Switch>
                 {routes.map(({ component, path }, index) => {
                     const Component = components[component];
