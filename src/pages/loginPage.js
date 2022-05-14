@@ -23,9 +23,10 @@ export default function LoginPage() {
         setPassword(e.target.value)
     }
     const handleSumbit = (e) => {
+        // todo: add auth and change this to set session
         localStorage.setItem("email", email)
         localStorage.setItem("password", password)
-        window.location.href = "/"
+        window.location.href = "/role"
     }
 
     return (

@@ -1,14 +1,24 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { withRouter } from "react-router";
+
 // pages
-import { Home, NotFound, LoginPage } from "pages";
+import { 
+    Home, 
+    NotFound, 
+    LoginPage, 
+    ChooseRolePage,
+    LogoutPage
+} from "pages";
+
 // routes config
 import { routes } from "./routesConfig";
 
 const components = {
     Home,
     LoginPage,
+    ChooseRolePage,
+    LogoutPage
 };
 
 function Routes() {
