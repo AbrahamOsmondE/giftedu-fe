@@ -2,12 +2,13 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { withRouter } from "react-router";
 // pages
-import { Home, NotFound } from "pages";
+import { Home, NotFound, LoginPage } from "pages";
 // routes config
 import { routes } from "./routesConfig";
 
 const components = {
     Home,
+    LoginPage,
 };
 
 function Routes() {
