@@ -15,6 +15,7 @@ import {
   BuyerPage,
   DonateeHomePage,
   ChildRegistrationPage,
+  DonatorSubscriptionPage,
 } from "pages";
 
 // routes config
@@ -31,6 +32,7 @@ const components = {
   BuyerPage,
   DonateeHomePage,
   ChildRegistrationPage,
+  DonatorSubscriptionPage,
 };
 
 function Routes() {

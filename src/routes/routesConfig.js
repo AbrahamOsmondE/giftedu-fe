@@ -24,6 +24,10 @@ export const routes = [
     path: "/donator",
   },
   {
+    component: "DonatorSubscriptionPage",
+    path: "/donator/subscription",
+  },
+  {
     component: "DonateeRegistrationPage",
     path: "/donatee/register",
   },

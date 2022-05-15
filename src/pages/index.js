@@ -9,3 +9,4 @@ export { default as DonateeRegistrationPage } from "./donateeRegistrationPage";
 export { default as DonateeHomePage } from "./donateeHomePage";
 export { default as BuyerPage } from "./buyerPage";
 export { default as ChildRegistrationPage } from "./childRegistrationPage";
+export { default as DonatorSubscriptionPage } from "./donatorSubscriptionPage"; 
