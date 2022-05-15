@@ -3,50 +3,50 @@ import { Switch, Route } from "react-router-dom";
 import { withRouter } from "react-router";
 
 // pages
-import { 
-    Home, 
-    NotFound, 
-    LoginPage, 
-    ChooseRolePage,
-    LogoutPage,
-    DonatorRegistrationPage,
-    DonatorHomePage,
-    DonateeRegistrationPage,
-    DonateeHomePage,
+import {
+  Home,
+  NotFound,
+  LoginPage,
+  ChooseRolePage,
+  LogoutPage,
+  DonatorRegistrationPage,
+  DonateeRegistrationPage,
+  BuyerPage,
+  DonateeHomePage,
 } from "pages";
 
 // routes config
 import { routes } from "./routesConfig";
 
 const components = {
-    Home,
-    LoginPage,
-    ChooseRolePage,
-    LogoutPage,
-    DonatorRegistrationPage,
-    DonatorHomePage,
-    DonateeRegistrationPage,
-    DonateeHomePage,
+  Home,
+  LoginPage,
+  ChooseRolePage,
+  LogoutPage,
+  DonatorRegistrationPage,
+  DonateeRegistrationPage,
+  BuyerPage,
+  DonateeHomePage,
 };
 
 function Routes() {
-    return (
-        <main className="w-full">
-            <Switch>
-                {routes.map(({ component, path }, index) => {
-                    const Component = components[component];
-                    return (
-                        <Route key={index} exact path={path}>
-                            <Component />
-                        </Route>
-                    );
-                })}
-                <Route path="*">
-                    <NotFound />
-                </Route>
-            </Switch>
-        </main>
-    );
+  return (
+    <main className="w-full">
+      <Switch>
+        {routes.map(({ component, path }, index) => {
+          const Component = components[component];
+          return (
+            <Route key={index} exact path={path}>
+              <Component />
+            </Route>
+          );
+        })}
+        <Route path="*">
+          <NotFound />
+        </Route>
+      </Switch>
+    </main>
+  );
 }
 
 export default withRouter(Routes);
