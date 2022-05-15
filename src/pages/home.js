@@ -26,7 +26,7 @@ export default function Home() {
             <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
             <p className="uppercase tracking-loose w-full">Subscription-based donation</p>
             <h1 className="my-4 text-5xl font-bold leading-tight">
-                FundMyEdu
+                GIFTEDU
             </h1>
             <p className="leading-normal text-l mb-8">
                 Alone we can do so little; Together we can do so much.
