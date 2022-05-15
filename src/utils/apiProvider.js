@@ -65,6 +65,11 @@ async function postUpdate(title, text, child_id) {
     return response;
 }
 
+async function getChild(child_id) {
+    const response = await axios.get(`${config.backendUrl}/child_api/${child_id}`)
+    return response;
+}
+
 export default {
     getDonatorFromName,
     postDonator,
@@ -74,5 +79,6 @@ export default {
     getAllChildren,
     postChild,
     getSubscription,
-    postUpdate
+    postUpdate,
+    getChild,
 }

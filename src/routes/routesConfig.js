@@ -32,11 +32,11 @@ export const routes = [
     path: "/donatee/register",
   },
   {
-    component: "BuyerPage",
-    path: "/donatee/details/:id",
+    component: "DonatorChildPage",
+    path: "/donator/child/:id",
   },
   {
-    component: "DoneeBuyerPage",
+    component: "DonateeChildPage",
     path: "/donatee/child/:id",
   },
   {

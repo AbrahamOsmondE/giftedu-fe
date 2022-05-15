@@ -11,7 +11,7 @@ let headerLink = [
   },
 ];
 
-export default function BuyerPage(id) {
+export default function DonateeChildPage() {
   const [details, setDetials] = useState({});
   return (
     <div>
@@ -47,8 +47,11 @@ export default function BuyerPage(id) {
           </div>
         </div>
       </div>
-      <div class="max-w-6xl flex ml-48 flex-wrap font-bold text-xl my-3 ">
-        Updates
+      <div class="max-w-6xl flex ml-48 justify-between font-bold text-xl my-3 ">
+        <div class="text-xl">Updates</div>
+        <div class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-100 bg-indigo-700">
+          + Add Updates
+        </div>
       </div>
       {details?.posts?.map((update) => {
         const date = new Date(update?.created);

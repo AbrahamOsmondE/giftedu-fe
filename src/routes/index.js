@@ -12,12 +12,12 @@ import {
   DonatorRegistrationPage,
   DonatorHomePage,
   DonateeRegistrationPage,
-  BuyerPage,
+  DonatorChildPage,
   DonateeHomePage,
   ChildRegistrationPage,
   DonatorSubscriptionPage,
   DonateeChildPostPage,
-  DoneeBuyerPage,
+  DonateeChildPage,
 } from "pages";
 
 // routes config
@@ -31,12 +31,12 @@ const components = {
   DonatorRegistrationPage,
   DonatorHomePage,
   DonateeRegistrationPage,
-  BuyerPage,
+  DonatorChildPage,
   DonateeHomePage,
   ChildRegistrationPage,
   DonatorSubscriptionPage,
   DonateeChildPostPage,
-  DoneeBuyerPage,
+  DonateeChildPage,
 };
 
 function Routes() {
