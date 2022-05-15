@@ -51,7 +51,14 @@ export default function DonateeHomePage() {
         <p className="text-center text-gray-900 pb-10">{details.phone_number ? details.phone_number : "not set" }</p> 
 
         <p className="text-center font-bold text-gray-900">Children:</p>
-
+        <div className="min-h-full flex items-center justify-center py-4">
+        <button
+            className="group relative w-1/2 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            onClick={()=>{window.location.href = "/donatee/register_child"}}
+        >
+            Add Child
+        </button>
+        </div>
 
         { children.length ?
             <div className="px-20 grid grid-cols-4 gap-4">

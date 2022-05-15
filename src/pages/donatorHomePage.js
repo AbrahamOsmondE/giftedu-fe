@@ -24,7 +24,7 @@ export default function DonatorHomePage() {
     }, [])
 
     const handleCardOnClick = (child_id) => {
-        window.location.href = `/child/${child_id}`
+        window.location.href = `/donator/child/${child_id}`
     }
 
     if (children.length === 0) {
