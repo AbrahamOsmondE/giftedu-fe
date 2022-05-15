@@ -95,6 +95,7 @@ export default function DonatorChildPage() {
       <div className="max-w-6xl flex ml-48 flex-wrap font-bold text-xl my-3 ">
         Updates
       </div>
+      <div className="px-40 grid grid-cols-4 gap-4">
       {details.posts.length === 0 && 
         <div className="max-w-6xl flex ml-48 flex-wrap text-l my-3 ">
           No update yet ... 
@@ -104,7 +105,7 @@ export default function DonatorChildPage() {
       details.posts.map((update) => {
         const date = (new Date(update.created)).toISOString().slice(0, 19).replace(/-/g, "/").replace("T", " ");
         return (
-          <div className="max-w-6xl flex ml-48 flex-wrap" key={update.id}>
+          <div key={update.id}>
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{update?.title}</div>
@@ -119,6 +120,7 @@ export default function DonatorChildPage() {
           </div>
         );
       })}
+      </div>
     </div>
   );
 }
