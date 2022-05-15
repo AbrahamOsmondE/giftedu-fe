@@ -10,7 +10,11 @@ let headerLink = [
     },
     {
         title: "home", 
-        href: "/"
+        href: "/donatee"
+    },
+    {
+        title: "logout", 
+        href: "/logout"
     },
 ]
 

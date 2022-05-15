@@ -9,8 +9,8 @@ let headerLink = [
         href: "/role"
     },
     {
-        title: "home", 
-        href: "/"
+        title: "logout", 
+        href: "/logout"
     },
 ]
 

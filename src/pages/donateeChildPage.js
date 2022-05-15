@@ -5,8 +5,16 @@ import { useParams } from "react-router-dom";
 
 let headerLink = [
   {
-    title: "logout",
-    href: "/logout",
+      title: "choose role", 
+      href: "/role",
+  },
+  {
+      title: "home", 
+      href: "/donatee",
+  },
+  {
+      title: "logout", 
+      href: "/logout",
   },
 ];
 

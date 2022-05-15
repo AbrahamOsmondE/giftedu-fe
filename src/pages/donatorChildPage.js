@@ -6,8 +6,20 @@ import authProvider from "utils/authProvider";
 
 let headerLink = [
   {
-    title: "logout",
-    href: "/logout",
+      title: "choose role", 
+      href: "/role",
+  },
+  {
+      title: "home", 
+      href: "/donator",
+  },
+  {
+      title: "your subscriptions", 
+      href: "/donator/subscription",
+  },
+  {
+      title: "logout", 
+      href: "/logout",
   },
 ];
 

@@ -5,6 +5,14 @@ import authProvider from "../utils/authProvider";
 
 let headerLink = [
     {
+        title: "choose role", 
+        href: "/role"
+    },
+    {
+        title: "home", 
+        href: "/donatee"
+    },
+    {
         title: "logout", 
         href: "/logout"
     },
