@@ -8,7 +8,8 @@ import {
     NotFound, 
     LoginPage, 
     ChooseRolePage,
-    LogoutPage
+    LogoutPage,
+    DonatorRegistrationPage,
 } from "pages";
 
 // routes config
@@ -18,7 +19,8 @@ const components = {
     Home,
     LoginPage,
     ChooseRolePage,
-    LogoutPage
+    LogoutPage,
+    DonatorRegistrationPage,
 };
 
 function Routes() {
