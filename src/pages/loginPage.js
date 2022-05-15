@@ -41,7 +41,7 @@ export default function LoginPage() {
         <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div>
-            <svg viewBox="2 2 34 34" className="mx-auto h-12 w-auto fill-current" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="2 2 34 34" className="mx-auto h-12 w-auto fill-current">
             <path d="M6,19v8c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3v-8H6z M21,24c0,1.7-1.3,3-3,3h-4c-1.7,0-3-1.3-3-3v-2c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1V24z"/>
                 <g><path d="M22,7.1V17h4v-3C26,11.1,24.4,8.5,22,7.1z"/><path d="M10,7.1c-2.4,1.4-4,4-4,6.9v3h4V7.1z"/></g>
                 <g><path d="M19,8h-6c-0.6,0-1-0.4-1-1V5c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3v2C20,7.6,19.6,8,19,8z M14,6h4V5c0-0.6-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1V6z"/></g>
