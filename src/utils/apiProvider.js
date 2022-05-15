@@ -40,6 +40,17 @@ async function getAllChildren() {
     return response;
 }
 
+async function postChild(name,description, photoBase64, cost, donee_id){
+    const response = await axios.post(`${config.backendUrl}/child_api`, {
+        name: name,
+        description: description,
+        photo: photoBase64,
+        subscription_cost: cost,
+        donee_id: donee_id
+    })
+    return response;
+}
+
 export default {
     getDonatorFromName,
     postDonator,
@@ -47,4 +58,5 @@ export default {
     postDonatee,
     getDonateeDetails,
     getAllChildren,
+    postChild,
 }
