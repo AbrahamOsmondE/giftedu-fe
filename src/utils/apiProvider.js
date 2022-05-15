@@ -56,6 +56,15 @@ async function getSubscription(donator_id) {
     return response;
 }
 
+async function postUpdate(title, text, child_id) {
+    const response = await axios.post(`${config.backendUrl}/post_api`, {
+        title: title,
+        text: text,
+        child_id: child_id,
+    })
+    return response;
+}
+
 export default {
     getDonatorFromName,
     postDonator,
@@ -65,4 +74,5 @@ export default {
     getAllChildren,
     postChild,
     getSubscription,
+    postUpdate
 }

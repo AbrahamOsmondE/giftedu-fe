@@ -43,4 +43,8 @@ export const routes = [
     component: "ChildRegistrationPage", 
     path: "/donatee/register_child" 
   },
+  { 
+    component: "DonateeChildPostPage", 
+    path: "/donatee/child/:id/update" 
+  },
 ];
