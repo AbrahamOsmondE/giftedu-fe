@@ -27,4 +27,8 @@ export const routes = [
         component: "DonateeRegistrationPage", 
         path: "/donatee/register" 
     },
+    { 
+        component: "DonateeHomePage", 
+        path: "/donatee" 
+    },
 ];

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Header } from "components";
 import apiProvider from "../utils/apiProvider"
+import authProvider from "utils/authProvider";
 
 let headerLink = [
     {
@@ -13,21 +14,23 @@ let headerLink = [
     },
 ]
 
-export default function DonatorHomePage() {
+export default function DonateeHomePage() {
+    const [details, setDetials] = useState({})
     const [children, setChildren] = useState([]);
 
     useEffect(() => {
-        apiProvider.getAllChildren()
+        apiProvider.getDonateeDetails(authProvider.getDonateeId())
         .then(res => {
-            setChildren(res.data)
+            setDetials(res.data)
+            setChildren(res.data.children)
         })
     }, [])
 
     const handleCardOnClick = (child_id) => {
-        window.location.href = `/child/${child_id}`
+        window.location.href = `/donatee/child/${child_id}`
     }
 
-    if (children.length === 0) {
+    if (details === {}) {
         return (<div><Header listOfLink={headerLink}/>Loading...</div>)
     }
 
@@ -35,12 +38,28 @@ export default function DonatorHomePage() {
     <div>
         <Header listOfLink={headerLink}/>
 
-        <div className="px-20 grid grid-cols-4 gap-4">
+        <h2 className="mt-6 text-center text-2xl font-extrabold text-gray-900">Hello, {details.name}</h2>
+        <div className="min-h-full flex items-center justify-center py-4">
+            <div className="h-40 w-40 overflow-hidden rounded-full">
+                <img className="object-fill" src={details.photo ? details.photo : "https://i.imgflip.com/1slnr0.jpg"} alt={details.name}/>
+            </div>
+        </div>
+        <p className="text-center font-bold text-gray-900">Description:</p>
+        <p className="text-center text-gray-900 pb-10">{details.description}</p>
+
+        <p className="text-center font-bold text-gray-900">Phone Number:</p>
+        <p className="text-center text-gray-900 pb-10">{details.phone_number ? details.phone_number : "not set" }</p> 
+
+        <p className="text-center font-bold text-gray-900">Children:</p>
+
+
+        { children.length ?
+            <div className="px-20 grid grid-cols-4 gap-4">
             {children.map(child => {
                 let name = child.name;
                 let img = child.photo ? child.photo : "https://i.imgflip.com/1slnr0.jpg";
                 let description = child.description.length > 50 ? `${child.description.slice(0, 48)}...` : child.description;
-                let donatee = child.donee
+                let donatee = details.name
                 let id = child.id
 
                 return(
@@ -64,5 +83,7 @@ export default function DonatorHomePage() {
             })}
 
         </div>
+        : <p className="w-full text-center mt-10">No Child Found </p>
+        }
     </div>
 )}
