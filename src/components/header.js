@@ -9,7 +9,7 @@ export default function Header(props) {
 
             <div className="pl-4 flex items-center">
                 <a className="toggleColour text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
-                    <img viewBox="0 0 34 34" className="h-16 fill-current inline" src={logo}/>
+                    <img viewBox="0 0 34 34" className="h-16 fill-current inline" src={logo} alt="logo"/>
                     <div style={{display: "inline"}} className="px-2">{"GIFTEDU"}</div>
                 </a>
             </div>
