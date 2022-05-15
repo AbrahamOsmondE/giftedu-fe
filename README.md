@@ -1,3 +1,16 @@
+# GIFTEDU
+
+## How to start the app
+
+1. make sure you have npm and yarn installed.
+1. make sure the backend is running
+1. go to `basedir/src/config.js` and change `backendUrl` to desired url.
+1. run `yarn` to install all the dependancies
+1. run `yarn start` to start the app
+1. open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
