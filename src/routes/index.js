@@ -10,6 +10,7 @@ import {
     ChooseRolePage,
     LogoutPage,
     DonatorRegistrationPage,
+    DonateeRegistrationPage,
 } from "pages";
 
 // routes config
@@ -21,6 +22,7 @@ const components = {
     ChooseRolePage,
     LogoutPage,
     DonatorRegistrationPage,
+    DonateeRegistrationPage,
 };
 
 function Routes() {

@@ -19,4 +19,8 @@ export const routes = [
         component: "DonatorRegistrationPage", 
         path: "/donator/register" 
     },
+    { 
+        component: "DonateeRegistrationPage", 
+        path: "/donatee/register" 
+    },
 ];

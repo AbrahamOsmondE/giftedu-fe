@@ -20,8 +20,19 @@ async function getDonateeFromName(username) {
     return response;
 }
 
+async function postDonatee(username, phoneNumber, photoBase64, description) {
+    const response = await axios.post(`${config.backendUrl}/donee_api`, {
+        name: username,
+        phone_number: phoneNumber,
+        photo: photoBase64,
+        description: description,
+    })
+    return response;
+}
+
 export default {
     getDonatorFromName,
     postDonator,
     getDonateeFromName,
+    postDonatee,
 }
