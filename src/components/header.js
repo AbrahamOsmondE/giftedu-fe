@@ -16,7 +16,7 @@ export default function Header(props) {
                         <g><path d="M4,18.2c-1.2,0.4-2,1.5-2,2.8v4c0,1.3,0.8,2.4,2,2.8V18.2z"/></g>
                         <g><path d="M28,18.2v9.6c1.2-0.4,2-1.5,2-2.8v-4C30,19.7,29.2,18.6,28,18.2z"/></g>
                     </svg>
-                    <div style={{display: "inline"}} className="px-2">{"BELIANAK"}</div>
+                    <div style={{display: "inline"}} className="px-2">{"FundMyEdu"}</div>
                 </a>
             </div>
             <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
