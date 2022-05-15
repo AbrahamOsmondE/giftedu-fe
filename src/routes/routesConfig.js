@@ -20,6 +20,10 @@ export const routes = [
         path: "/donator/register" 
     },
     { 
+        component: "DonatorHomePage", 
+        path: "/donator" 
+    },
+    { 
         component: "DonateeRegistrationPage", 
         path: "/donatee/register" 
     },

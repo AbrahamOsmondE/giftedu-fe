@@ -10,6 +10,7 @@ import {
     ChooseRolePage,
     LogoutPage,
     DonatorRegistrationPage,
+    DonatorHomePage,
     DonateeRegistrationPage,
 } from "pages";
 
@@ -22,6 +23,7 @@ const components = {
     ChooseRolePage,
     LogoutPage,
     DonatorRegistrationPage,
+    DonatorHomePage,
     DonateeRegistrationPage,
 };
 

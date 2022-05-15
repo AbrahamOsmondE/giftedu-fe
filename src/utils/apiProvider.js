@@ -30,9 +30,15 @@ async function postDonatee(username, phoneNumber, photoBase64, description) {
     return response;
 }
 
+async function getAllChildren() {
+    const response = await axios.get(`${config.backendUrl}/child_api`)
+    return response;
+}
+
 export default {
     getDonatorFromName,
     postDonator,
     getDonateeFromName,
     postDonatee,
+    getAllChildren,
 }
