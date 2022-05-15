@@ -44,7 +44,7 @@ export default function DonateeChildPostPage() {
         }
         apiProvider.postUpdate(title, text, child_id)
         .then(res => {
-            window.location.href = `/donatee/${child_id}`
+            window.location.href = `/donatee/child/${child_id}`
         })
         .catch(err => {
             alert("something went wrong! please try again!");
