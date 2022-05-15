@@ -1,5 +1,7 @@
 import React from "react";
 import { Header } from "components";
+import apiProvider from "../utils/apiProvider";
+import authProvider from "../utils/authProvider";
 
 let headerLink = [
     {
@@ -11,13 +13,25 @@ let headerLink = [
 export default function ChooseRolePage() {
 
     const handleDonator = (e) => {
-        // todo: add check donator, if not found, redirect to '/donator/register'
-        window.location.href='/donator'
+        apiProvider.getDonatorFromName(authProvider.getUsername())
+        .then( res => {
+            authProvider.setDonatorId(res.data.id);
+            window.location.href = '/donator'
+        })
+        .catch( () => {
+            window.location.href = '/donator/register'
+        });
     }
 
     const handleDonatee = (e) => {
-        // todo: add check donatee, if not found, redirect to '/donatee/register'
-        window.location.href='/donatee'
+        apiProvider.getDonateeFromName(authProvider.getUsername())
+        .then( res => {
+            authProvider.setDonateeId(res.data.id);
+            window.location.href = '/donatee'
+        })
+        .catch( () => {
+            window.location.href = '/donatee/register'
+        });
     }
 
     return (
