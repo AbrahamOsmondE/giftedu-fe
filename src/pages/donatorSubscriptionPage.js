@@ -32,10 +32,6 @@ export default function DonatorSubscriptionPage() {
         })
     }, [])
 
-    const handleCardOnClick = (child_id) => {
-        window.location.href = `/donator/child/${child_id}`
-    }
-
     if (children.length === 0) {
         return (<div>
             <Header listOfLink={headerLink}/> 
@@ -57,7 +53,7 @@ export default function DonatorSubscriptionPage() {
                 let createdTime = child.created
 
                 return(
-                    <button className="rounded overflow-hidden shadow-lg p-4 m-4" onClick={e => handleCardOnClick(id)} key={id}>
+                    <button className="rounded overflow-hidden shadow-lg p-4 m-4" key={id}>
                     <div className="px-6 py-4">
                         <div className=" text-xl mb-2">
                         <span className="inline-block bg-indigo-700 rounded-full px-3 py-1 text-sm text-gray-100 mr-2 mb-2">{id}</span>
