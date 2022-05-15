@@ -22,6 +22,14 @@ function removePassword() {
     localStorage.removeItem("password")
 }
 
+function removeDonatorId() {
+    localStorage.removeItem("donatorId")
+}
+
+function removeDonateeId() {
+    localStorage.removeItem("donateeId")
+}
+
 function getUsername() {
     return localStorage.getItem("username")
 }
@@ -41,6 +49,8 @@ export default {
     setDonateeId,
     removeUsername,
     removePassword,
+    removeDonatorId,
+    removeDonateeId,
     getUsername,
     getDonatorId,
     getDonateeId,

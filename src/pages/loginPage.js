@@ -14,6 +14,10 @@ let headerLink = [
 ]
 
 export default function LoginPage() {
+    if (authProvider.getUsername()) {
+      window.location.href = "/role"
+    }
+
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
