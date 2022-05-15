@@ -39,7 +39,7 @@ export default function DonateeHomePage() {
     }
 
     return (
-    <div>
+    <div className="pb-20">
         <Header listOfLink={headerLink}/>
 
         <h2 className="mt-6 text-center text-2xl font-extrabold text-gray-900">Hello, {details.name}</h2>

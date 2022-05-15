@@ -42,7 +42,7 @@ export default function DonateeChildPage() {
   }
 
   return (
-    <div>
+    <div className="pb-20">
       <Header listOfLink={headerLink} />
       <div className="px-20 grid grid-cols-2 gap-4 pb-10">
         <div className="min-h-full flex items-center justify-center py-4">

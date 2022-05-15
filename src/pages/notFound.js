@@ -6,7 +6,7 @@ export default function NotFound() {
         window.location.href = "/"
     }
 
-    return <div>
+    return <div className="pb-20">
         <Header listOfLink={[]}/>
         
         <div className="pt-24">

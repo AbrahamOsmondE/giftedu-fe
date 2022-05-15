@@ -40,7 +40,7 @@ export default function DonatorHomePage() {
     }
 
     return (
-    <div>
+    <div className="pb-20">
         <Header listOfLink={headerLink}/>
 
         <div className="px-20 grid grid-cols-4 gap-4">

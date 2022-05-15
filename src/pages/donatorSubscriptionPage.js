@@ -45,7 +45,7 @@ export default function DonatorSubscriptionPage() {
     }
 
     return (
-    <div>
+    <div className="pb-20">
         <Header listOfLink={headerLink}/>
 
         <h2 className="mt-6 text-center text-2xl font-extrabold text-gray-900">Your Subscriptions</h2>

@@ -17,7 +17,7 @@ export default function Home() {
         window.location.href = "/login"
     }
     return (
-    <div>
+    <div className="pb-20">
         <Header listOfLink={headerLink}/>
 
         <div className="pt-24">
