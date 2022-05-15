@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Header } from "components";
+import authProvider from "../utils/authProvider"
 
 let headerLink = [
     {
@@ -24,8 +25,8 @@ export default function LoginPage() {
     }
     const handleSumbit = (e) => {
         // todo: add auth and change this to set session
-        localStorage.setItem("username", username)
-        localStorage.setItem("password", password)
+        authProvider.setUsername(username)
+        authProvider.setPassword(password)
         window.location.href = "/role"
     }
 
