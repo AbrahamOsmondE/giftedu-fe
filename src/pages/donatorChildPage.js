@@ -40,6 +40,10 @@ export default function DonatorChildPage() {
     apiProvider.postSubscription(authProvider.getDonatorId(), child_id)
     .then( res => {
       alert("your subscription successfuly created!")
+      apiProvider.getChild(child_id)
+      .then(res => {
+          setDetials(res.data)
+      })
     })
     .catch( err => {
       alert("something went wront, please try again!")
