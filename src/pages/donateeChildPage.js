@@ -49,13 +49,6 @@ export default function DonateeChildPage() {
               <p className="text-gray-600 text-lg">{details.donee}</p>
             </div>
             <div>
-              <ul className="w-1.5">
-                <li className="mr-3">
-                  <button className="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-100 bg-indigo-700">
-                    Subscribe
-                  </button>
-                </li>
-              </ul>
               <p className="text-lg text-right pr-8">$ {details.subscription_cost} /month</p>
             </div>
           </div>
