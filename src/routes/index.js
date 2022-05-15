@@ -17,6 +17,7 @@ import {
   ChildRegistrationPage,
   DonatorSubscriptionPage,
   DonateeChildPostPage,
+  DoneeBuyerPage,
 } from "pages";
 
 // routes config
@@ -35,6 +36,7 @@ const components = {
   ChildRegistrationPage,
   DonatorSubscriptionPage,
   DonateeChildPostPage,
+  DoneeBuyerPage,
 };
 
 function Routes() {

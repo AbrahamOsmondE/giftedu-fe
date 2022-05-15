@@ -33,18 +33,22 @@ export const routes = [
   },
   {
     component: "BuyerPage",
-    path: "/donatee/details",
+    path: "/donatee/details/:id",
+  },
+  {
+    component: "DoneeBuyerPage",
+    path: "/donatee/child/:id",
   },
   {
     component: "DonateeHomePage",
     path: "/donatee",
   },
-  { 
-    component: "ChildRegistrationPage", 
-    path: "/donatee/register_child" 
+  {
+    component: "ChildRegistrationPage",
+    path: "/donatee/register_child",
   },
-  { 
-    component: "DonateeChildPostPage", 
-    path: "/donatee/child/:id/update" 
+  {
+    component: "DonateeChildPostPage",
+    path: "/donatee/child/:id/update",
   },
 ];
