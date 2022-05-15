@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Header } from "components";
 import apiProvider from "../utils/apiProvider";
 import { useParams } from "react-router-dom";
+import authProvider from "utils/authProvider";
 
 let headerLink = [
   {
@@ -23,6 +24,15 @@ export default function DonatorChildPage() {
       })
   }, [child_id])
 
+  const handleSubscription = (e) => {
+    apiProvider.postSubscription(authProvider.getDonatorId(), child_id)
+    .then( res => {
+      alert("your subscription successfuly created!")
+    })
+    .catch( err => {
+      alert("something went wront, please try again!")
+    })
+  }
 
   if (!details) {
     return (
@@ -51,7 +61,9 @@ export default function DonatorChildPage() {
             <div>
               <ul className="w-1.5">
                 <li className="mr-3">
-                  <button className="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-100 bg-indigo-700">
+                  <button className="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-100 bg-indigo-700"
+                    onClick={handleSubscription}
+                  >
                     Subscribe
                   </button>
                 </li>

@@ -70,6 +70,14 @@ async function getChild(child_id) {
     return response;
 }
 
+async function postSubscription(donator_id, child_id) {
+    const response = await axios.post(`${config.backendUrl}/subscription_api`, {
+        donator_id: donator_id,
+        child_id: child_id,
+    })
+    return response;
+}
+
 export default {
     getDonatorFromName,
     postDonator,
@@ -81,4 +89,5 @@ export default {
     getSubscription,
     postUpdate,
     getChild,
+    postSubscription,
 }
