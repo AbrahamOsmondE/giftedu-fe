@@ -33,7 +33,7 @@ export default function Home() {
                 <br/>- Helen Keller
             </p>
             <p className="leading-normal text-2xl mb-8">
-                Subscribe to donate monthly to helo a child pursue a higher education. Start by helping a child!
+                Subscribe to donate monthly to help a child pursue a higher education. Start by helping a child!
             </p>
             <button className="mx-auto lg:mx-0 hover:underline bg-indigo-700 text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                 onClick={handleLoginButton}
