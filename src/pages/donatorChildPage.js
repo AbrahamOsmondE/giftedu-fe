@@ -39,14 +39,14 @@ export default function DonatorChildPage() {
   const handleSubscription = (e) => {
     apiProvider.postSubscription(authProvider.getDonatorId(), child_id)
     .then( res => {
-      alert("your subscription successfuly created!")
+      alert("your subscription successfully created!")
       apiProvider.getChild(child_id)
       .then(res => {
           setDetials(res.data)
       })
     })
     .catch( err => {
-      alert("something went wront, please try again!")
+      alert("something went wrong, please try again!")
     })
   }
 
